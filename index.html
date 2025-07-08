@@ -1,6 +1,173 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html>
-<head><title>Hello</title></head>
-<body><h1>This website is under construction.</h1></body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description"
+        content="The Schärfen Lab at UMass Chan studies RNA structure through large-scale comparative measurement, and through systematic functional characterization. Experimental and Computational." />
+    <title>Schärfen Laboratory at UMass Chan</title>
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="SchärfenLab" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://schaerfenlab.com/" />
+    <script src="scripts.js" defer></script>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Schärfen Lab at UMass Chan" />
+    <meta property="og:description"
+        content="Exploring RNA structure and function using high-throughput experimental and computational methods." />
+    <meta property="og:image" content="https://schaerfenlab.com/images/research/tSNE-with-cbar.png" />
+    <meta property="og:url" content="https://schaerfenlab.com/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Schärfen Lab at UMass Chan" />
+    <meta name="twitter:description"
+        content="Exploring RNA structure and function using high-throughput experimental and computational methods." />
+    <meta name="twitter:image" content="https://schaerfenlab.com/images/research/tSNE-with-cbar.png" />
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "ResearchOrganization",
+    "name": "Schärfen Lab at UMass Chan",
+    "url": "https://schaerfenlab.com",
+    "description": "The Schärfen Lab studies RNA structure and function using high-throughput experimental and computational methods.",
+    "logo": "https://schaerfenlab.com/favicon/web-app-manifest-512x512.png",
+    "sameAs": [
+        "https://www.umassmed.edu/rti/",
+        "https://schaerfenlab.com"
+    ]
+    }
+    </script>
+    <!-- Cloudflare Web Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+        data-cf-beacon='{"token": "832a9481a64a44d5baa0bad9d343ad91"}'></script>
+    <!-- End Cloudflare Web Analytics -->
+</head>
+
+<body>
+    <div class="page-frame"></div>
+    <div class="page-content">
+        <header class="topbar">
+            <div class="container">
+                <a href="index.html" class="logo-link">Schärfen<br>Lab</a>
+                <nav class="nav-cards">
+                    <a href="members/" class="card">Members</a>
+                    <a href="publications/" class="card">Publications</a>
+                    <a href="news/" class="card">News</a>
+                    <a href="join/" class="card">Join Us</a>
+                    <a href="contact/" class="card">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <h1 style="padding-top: 3rem;">Research</h1>
+
+        <div class="publications">
+            <p>Welcome to the Schärfen Lab at the <a href="https://www.umassmed.edu/rti/" class="no-style">RNA
+                    Therapeutics Institute</a> (RTI) of UMass Chan.
+                Right now, we
+                are only beginning to recognize the important role of RNA structure in molecular and cellular biology.
+                Our lab
+                studies RNA structure from a global, systems-level perspective: through large-scale comparative
+                measurement of structure, and through systematic functional characterization. Most of our experiments
+                are designed to answer questions about RNA structure
+                <em>in vivo</em>. Our approaches draw from fields including genomics, data science, systems biology,
+                biochemistry, and others.
+            </p>
+        </div>
+
+        <div class="image-text-block">
+            <img src="/images/research/landscape.png" alt="Dynamic RNA structure, RNA folding landscape" class="image">
+            <div class="text">
+                <h2>RNA structure is dynamic</h2>
+                <p>Each individual RNA molecule can adopt many distinct conformations, which differ in their stability,
+                    or free energy of folding (<em>∆G</em>). Each RNA sequence therefore defines a unique free energy
+                    landscape, where stable structures populate the valleys. Unlike for proteins, RNA folding landscapes
+                    are
+                    typically rugged, such that RNAs may
+                    exist in several equally stable conformations. We are interested in how this unique property
+                    shapes the molecular functions of natural and synthetic RNAs.</p>
+            </div>
+        </div>
+
+        <div class="image-text-block reverse">
+            <img src="/images/research/tSNE-with-cbar.png"
+                alt="UMAP embedding of positional entropy vectors for thousands of sequences" class="image"
+                style="max-width: 375px; height: auto;">
+            <div class="text">
+                <h2>Large-scale data collection</h2>
+                <p>Natural RNAs explore a huge sequence space, and because they are dynamic, the structure space is even
+                    larger. We aim to measure RNA structure and function of many thousands of sequences. To do this, we
+                    use different sequencing methods and massively parallel reporter assays. Then, we apply machine
+                    learning methods to extract information from the large-scale data sets that we collect in the lab.
+                </p>
+            </div>
+        </div>
+
+        <div class="image-text-block">
+            <img src="/images/research/ensemble-structs.png"
+                alt="Superimposed MFE structures two RNA structure libraries" class="image" loading="lazy">
+            <div class="text">
+                <h2>Structure variants</h2>
+                <p>To make sense of the structural features that confer an RNA's function, we make use of RNA
+                    libraries where each sequence represents a slightly different structure. By characterizing
+                    structurally similar RNA variants, we can map structure to function at high resolution, directly
+                    inside cells.</p>
+            </div>
+        </div>
+
+        <div class="image-text-block reverse">
+            <img src="/images/research/phenotypes.png" alt="Some molecular processes that depend on RNA folding."
+                class="image" loading="lazy">
+            <div class="text">
+                <h2>Molecular Processes</h2>
+                <p>Formation of RNA structure has been shown to influence many cellular processes. We aim to obtain a
+                    comprehensive overview of the mechanisms and effect sizes at each step of gene expression. This
+                    includes transcription, pre-mRNA splicing, cellular localization and translation.</p>
+            </div>
+        </div>
+
+        <h1>Methods</h1>
+
+        <div class="image-text-block">
+            <img src="/images/research/methods.png" alt="Methods used by the Schärfen lab." class="image"
+                loading="lazy">
+            <div class="text">
+                <p>Our lab applies a range of methods to produce and analyze large data sets. We use RNA structure
+                    prediction
+                    algorithms to design variant libraries that we can test in cells. Massively parallel reporter assays
+                    such as Sort-seq allow us to assign function to tens of thousands of sequences in a single
+                    experiment. We directly probe RNA base pairing or structural flexibility inside cells with tools
+                    like DMS-MaPseq, CoSTseq, and SHAPE-based methods. We always look to apply or develop new methods to
+                    add to our repertoire! </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-logos">
+        <a href="https://www.umassmed.edu/rti/" target="_blank" rel="noopener noreferrer"
+            title="RNA Therapeutics Institute"><img src="/images/logos/logos-01.png" alt="RTI Logo" loading="lazy"></a>
+        <a href="https://www.umassmed.edu/" target="_blank" rel="noopener noreferrer" title="UMass Chan Medical School">
+            <picture>
+                <source srcset="/images/logos/logos-02.png" media="(max-width: 700px)">
+                <img src="/images/logos/logos-03.png" alt="Center Logo" loading="lazy">
+            </picture>
+        </a>
+
+        <a href="https://www.umassmed.edu/rti/about-the-rti/fellows/" target="_blank" rel="noopener noreferrer"
+            title="Maraganore Fellows"><img src="/images/logos/logos-04.png" alt="Maraganore Logo" loading="lazy"></a>
+    </footer>
+</body>
+
+
 </html>
